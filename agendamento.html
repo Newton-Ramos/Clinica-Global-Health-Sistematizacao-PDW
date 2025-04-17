@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento - Clínica Global Health</title>
+
+  <!-- Links para CSS e Flatpickr -->
+  <link rel="icon" type="image/png" href="Assets/Icon Global Health.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+  <script src="scripts.js"></script>
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container">
+      <h1>Agendamento de Consulta</h1>
+    </div>
+  </header>
+
+  <!-- Formulário de Agendamento -->
+  <section class="container" id="agendamentoSection">
+    <form id="agendamentoForm">
+      <!-- Campo de Especialidade/Exame -->
+      <div class="form-group">
+        <label for="especialidade">Escolha uma especialidade ou exame:</label>
+        <select id="especialidade" required>
+          <option value="" disabled selected>-- Selecione --</option>
+          <option value="Cardiologia">Cardiologia</option>
+          <option value="Clínico Geral">Clínico Geral</option>
+          <option value="Dermatologia">Dermatologia</option>
+          <option value="Neurologia">Neurologia</option>
+          <option value="Nutrição">Nutrição</option>
+          <option value="Pediatria">Pediatria</option>
+          <option value="Exame Laboratorial">Exame Laboratorial</option>
+          <option value="Exame de Imagem">Exame de Imagem</option>
+        </select>
+      </div>
+
+      <!-- Campo de Data -->
+      <div class="form-group">
+        <label for="dataConsulta">Data:</label>
+        <input type="text" id="dataConsulta" placeholder="Escolha a data" required autocomplete="off">
+      </div>
+
+      <!-- Campo de Hora -->
+      <div class="form-group">
+        <label for="horaConsulta">Hora:</label>
+        <select id="horaConsulta" required>
+          <option value="" disabled selected>-- Selecione --</option>
+          <!-- Opções serão preenchidas via JS -->
+        </select>
+      </div>
+
+      <!-- Botão de Finalização -->
+      <button type="button" class="btn-cadastro" onclick="finalizarAgendamento()">Finalizar Agendamento</button>
+      <button type="button" class="btn-cadastro" id="btnVoltarIndex" onclick="voltarParaHome()">Voltar para Página Inicial</button>
+    </form>
+  </section>  
+   
+  <!-- Resumo do Agendamento (inicialmente oculto) -->
+  <section id="resumoSection" class="container" style="display:none;">
+    <h2>Agendamento Confirmado</h2>
+    <p><strong>Nome:</strong> <span id="nome"></span></p>
+    <p><strong>Especialidade/Exame:</strong> <span id="resumoEspecialidade"></span></p>
+    <p><strong>Data e horário:</strong> <span id="resumoDataHora"></span></p>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    
+    <p>&copy; 2025 Clínica Global Health. Todos os direitos reservados.</p>
+  
+  </footer>
+
+
+</body>
+
+</html>

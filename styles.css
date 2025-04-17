@@ -1,0 +1,275 @@
+/* Estilos gerais para o corpo */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  font-size: 18px;
+  line-height: 1.1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #1e3a5f;
+  color: white;
+  padding: 5px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#logo-container {
+  margin-bottom: 5px;
+}
+
+#logo {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 20px 0;
+  font-weight: 600;
+  color: white;
+}
+
+#slogan {
+  font-size: 1.1rem;
+  margin: 10px 0 5px 0;
+  font-style: italic;
+  color: white;
+}
+
+#contato {
+  font-size: 18px;
+  color: #444;
+  text-align: center;
+  margin: 10px 0 10px;
+  padding: 10px;
+  line-height: 1.6;
+}
+
+#contato h1 {
+  font-size: 24px;
+  color: #0979f8;
+  margin-bottom: 10px;
+}
+
+#contato p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+  color: #0979f8;
+  font-weight: 200;
+}
+
+#header-info p {
+  font-size: 0.9rem;
+  margin: 3px 0;
+  font-weight: 300;
+  opacity: 0.8;
+  color: white;
+}
+
+/* Seções */
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+/* Serviços e Equipe */
+.servicos, .equipe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.servicos div, .equipe div {
+  flex: 1 1 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.servicos img, .equipe img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.servicos p, .equipe p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Botão de cadastro */
+.btn-cadastro {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #1e3a5f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+.btn-cadastro:hover {
+  background-color: #184d74;
+}
+
+/* Formulário */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="datetime-local"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 4px 0 12px 0;
+  border: 2px solid #1e3a5f;
+  border-radius: 8px;
+  font-size: 18px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#especialidade {
+  width: 100%;
+}
+
+/* Botões */
+button {
+  background-color: #1e3a5f;
+  color: white;
+  padding: 15px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #184d74;
+}
+
+/* Rodapé */
+footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #555;
+  margin-top: auto;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .servicos div, .equipe div {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Placeholder */
+input::placeholder,
+select::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Validação */
+input:invalid,
+select:invalid {
+  border-color: #333;
+}
+
+/* Data e hora lado a lado */
+#dataHoraContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#dataHoraContainer label {
+  margin-right: 5px;
+}
+
+/* Flatpickr */
+.flatpickr-input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #1e3a5f;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.flatpickr-calendar {
+  font-size: 16px;
+}
+
+#dataConsulta,
+#horaConsulta {
+  padding: 12px;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #333;
+  background-color: white;
+  margin-top: 10px;
+}
