@@ -31,6 +31,29 @@ header {
   margin: 0 auto;
 }
 
+.servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;  /* Distribui as imagens igualmente */
+}
+
+.servicos div {
+  width: 200px;  /* Largura do item, que contém a imagem */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2px;
+}
+
+.servicos img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  background-color: #f0f0f0; /* Só pra caso a imagem não cubra 100% */
+}
+
 h1 {
   font-size: 1.8rem;
   margin: 20px 0;
