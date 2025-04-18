@@ -81,7 +81,8 @@ O projeto tem como objetivo a aplicação prática dos conceitos de desenvolvime
 👨‍💻 Desenvolvedor:
 **Newton Ramos Chaves Junior**
   - Meu Repositório Online - [Newton Ramos GitHub](https://github.com/Newton-Ramos)
-  - Repositório do Projeto Clínica Global Health - [Clínica Global Health](https://github.com/Newton-Ramos/Clinica-Global-Health-Sistematizacao-PDW)
+  - Repositório do Projeto Clínica Global Health - [Projeto Clínica Global Health](https://github.com/Newton-Ramos/Clinica-Global-Health-Sistematizacao-PDW)
+  - Site Clínica global Health - [Clínica Global Health](https://newton-ramos.github.io/Clinica-Global-Health-Sistematizacao-PDW/)
   - Vídeo de Apresentação - [YouTube](https://www.youtube.com/watch?v=DqP5nJP-C20)
 
 ---
